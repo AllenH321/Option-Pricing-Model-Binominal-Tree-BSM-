@@ -1,4 +1,4 @@
-# Option Pricing Model
+# Option Pricing Model （CRR & BSM)
 
 This project builds an option pricing workflow around three core components:
 

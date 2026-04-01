@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "option-pricing-model"
+version = "2.0.0"
+description = "Option pricing package with data helpers, volatility tools, and pricing models."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.25",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "yfinance>=0.2.40",
+]
+
+[project.optional-dependencies]
+garch = ["arch>=6.3"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
